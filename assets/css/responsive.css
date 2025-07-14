@@ -193,6 +193,37 @@
 		line-height: 80px;
 	}
 
+	.header {
+		padding: 10px 0;
+	}
+
+	h3 {
+		font-size: 20px;
+	}
+
+	.section-title {
+		font-size: 45px;
+		padding-bottom: 30px;
+	}
+
+	.myphoto {
+		width: 65%;
+		margin: auto;
+	}
+
+	.short-info h3 {
+		padding: 50px 0 30px;
+		font-size: 20px;
+		text-align: center;
+	}
+
+	.short-info p {
+		font-size: 14px;
+		width: 80%;
+		margin: auto;
+		text-align: center;
+	}
+
 	.social-icons ul {
 		margin-left: -5px;
 	}
@@ -229,6 +260,9 @@
 		width: 50%;
 	}
 
+	.entry-title p {
+		padding-top: 2px;
+	}
 
 	/*resume*/
 	.resume:before,
@@ -236,9 +270,42 @@
 		left: 1px;
 	}
 
+
+	.timeline-heading h3 {
+		text-align: left;
+	}
+
+	.resume-title h3 {
+		font-size: 20px;
+	}
+
+	.timeline-heading h3 {
+		font-size: 20px;
+	}
+
 	/*skill section*/
+
+
+	.progress-bar span {
+		right: 35px;
+		color: #333;
+	}
+
+	.col-xs-12 {
+		width: 33%;
+	}
+
+	.skill-chart h3 {
+		margin: 70px 0 30px;
+	}
+
 	.skill-title h3 {
-		font-size: 12px;
+		font-size: 14px;
+	}
+
+	.progress-bar span {
+		right: 10px;
+		color: #333;
 	}
 
 	/*facts section*/
@@ -267,7 +334,7 @@
 	}
 
 	.entry-title {
-		padding: 20px 10px;
+		padding: 15px 10px 5px;
 	}
 
 	/*hire us section*/
@@ -278,6 +345,29 @@
 	/*contact section*/
 	.contact-form {
 		margin-bottom: 40px;
+	}
+
+	.section-title {
+		margin-bottom: 50px;
+	}
+
+	.con1 {
+		display: flex;
+		justify-content: center;
+		gap: 70px;
+	}
+
+	.contact-item img {
+		width: 100px;
+		height: 100px;
+	}
+
+	.contact-title {
+		font-size: 16px;
+	}
+
+	.contact-info {
+		font-size: 11px;
 	}
 
 	.contact-section .map-icon,
@@ -346,14 +436,56 @@
 
 	.navbar-custom .navbar-nav>li>a,
 	.navbar-custom .navbar-nav .dropdown-menu>li>a {
-		font-size: 12px;
+		font-size: 15px;
 		padding: 15px;
 	}
+
+	.header {
+		padding: 10px;
+	}
+
+	.myphoto {
+		position: relative;
+		width: 50%;
+		margin: auto;
+	}
+
+	.short-info h3 {
+		padding-top: 50px;
+		margin-bottom: 40px;
+		font-size: 30px;
+		text-align: center;
+	}
+
+	.short-info p {
+		width: 700px;
+		margin: auto;
+		font-size: 17px;
+		line-height: 2;
+		text-align: center;
+	}
+
+	.section-title {
+		font-size: 45px;
+	}
+
 
 	/*about me section*/
 	.biography {
 		margin-top: 20px;
 		margin-bottom: 45px;
+	}
+
+	/* 포트폴리오 */
+	h3 {
+		font-size: 18px;
+		line-height: 24px;
+		text-align: left;
+	}
+
+	.entry-title p {
+		padding-top: 10px;
+		text-align: left;
 	}
 
 	/*resume*/
@@ -362,9 +494,15 @@
 		left: 0px;
 	}
 
+	.timeline-heading h3 {
+		text-align: left;
+	}
+
 	/*skill section*/
-	.skill-title h3 {
-		font-size: 14px;
+
+	.skill-chart h3 {
+		font-size: 20px;
+		margin: 70px 0 20px;
 	}
 
 	/*blog section*/
@@ -378,6 +516,19 @@
 
 
 	/*contact section*/
+
+	.con1 {
+		gap: 100px;
+	}
+
+	.contact-item img {
+		width: 130px;
+		height: 130px;
+		border-radius: 50%;
+		background: #fff;
+		padding: 15px;
+	}
+
 	.contact-form {
 		margin-bottom: 40px;
 	}
@@ -406,6 +557,7 @@
 		margin-bottom: 0;
 	}
 
+
 	/*HOME TWO*/
 	#homeTwo:before {
 		width: 100%;
@@ -423,6 +575,40 @@
 @media (min-width : 992px) and (max-width : 1199px) {
 	.portfolio-item {
 		min-height: 150px;
+	}
+
+	.header {
+		border-top: 1px solid #eee;
+		position: relative;
+		width: 100%;
+		z-index: 998;
+		padding: 10px 0;
+	}
+
+	.short-info p {
+		width: 550px;
+		line-height: 2;
+		font-size: 16px;
+	}
+
+	.myphoto {
+		top: 50px;
+	}
+
+	.section-title {
+		font-size: 40px;
+	}
+
+	.skill-title h3 {
+		font-size: 15px;
+	}
+
+	.contact-item img {
+		width: 150px;
+		height: 150px;
+		border-radius: 50%;
+		background: #fff;
+		padding: 15px;
 	}
 }
 
