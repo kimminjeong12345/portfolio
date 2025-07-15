@@ -441,7 +441,7 @@ SOCIAL ICON
     z-index: 0;
 }
 
-.video{
+.video {
     width: 100%;
 }
 
@@ -652,16 +652,43 @@ SOCIAL ICON
 /* === Portfolio Section === */
 .blog-post-wrapper {
     margin-bottom: 30px;
+}
+
+.blog-post-wrapper>a {
+    display: block;
     overflow: hidden;
+    border-radius: 10px;
+    border: 1px solid #cccccc;
 }
 
 .blog-post-wrapper .img-responsive {
     padding: 0;
-    border-radius: 10px;
+    display: block;
+    transition: all 0.8s ease;
 }
 
+.blog-post-wrapper .img-responsive:hover {
+    transform: scale(1.08, 1.08);
+}
+
+
+
+/* 프로모션 박스 */
+
+.blog-post-wrapper .img-responsive2 {
+    padding: 0;
+    display: block;
+    transition: all 0.8s ease;
+}
+
+.blog-post-wrapper:hover .img-responsive2 {
+    transform: scale(1.04, 1.04);
+}
+
+/* 프로모션 박스 */
+
 .entry-title {
-    padding: 30px 0;
+    padding: 30px 20px;
 }
 
 .entry-title p {
@@ -699,7 +726,7 @@ Icon for all respective meta
 }
 
 .the-time::before {
-    font-family: FontAwesome;
+    font-family: 'Pretendard';
     position: absolute;
     left: 0;
 }
@@ -733,9 +760,13 @@ Icon for all respective meta
     min-height: 235px;
 }
 
+
+
+/* artwork 사진 */
+
 .portfolio-bg {
     background: #fff;
-    padding: 5px;
+    margin: 5px;
     border: 1px solid #eee;
     border-bottom: 3px double #eee;
 }
@@ -850,7 +881,7 @@ Icon for all respective meta
 
 
 /* === Popup Section === */
-.popup {
+/* .popup {
     position: fixed;
     top: 0;
     left: 0;
@@ -885,7 +916,7 @@ Icon for all respective meta
 
 .popup_in img {
     width: 49%;
-}
+} */
 
 /* === Resume Section === */
 
@@ -1039,7 +1070,7 @@ Resume Timeline
     text-align: right;
 }
 
-.timeline-inverted h3{
+.timeline-inverted h3 {
     text-align: left;
 }
 
@@ -1359,13 +1390,17 @@ Resume Timeline
 
 
 /* === Footer Wrapper === */
+
 .footer-wrapper {
     background: #3C68B2;
     padding: 40px 0;
     color: #fff;
+    width: 100vw;
+    /* 화면 전체 너비 */
+    margin-left: calc(-50vw + 50%);
 }
 
-.footer-wrapper h2{
+.footer-wrapper h2 {
     color: #fff;
     font-weight: 300;
     padding: 20px 0;
@@ -1377,34 +1412,41 @@ Resume Timeline
 
 
 .con1 {
-  display: flex;
-  justify-content: center;
-  gap: 200px;
+    display: flex;
+    justify-content: center;
+    gap: 200px;
 }
 
 .contact-item {
-  text-align: center;
+    text-align: center;
 }
 
 .contact-item img {
-  width: 182px;
-  height: 182px;
-  border-radius: 50%;
-  background: #fff;
-  padding: 15px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #fff;
+    padding: 8px;
+}
+
+.contact-item img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    filter: invert(1);
+    transition: all 0.8s ease;
 }
 
 .contact-title {
-  padding: 20px 0 0;
-  font-size: 21px;
-  font-weight: 600;
-  font-family: 'pretendard';
+    padding: 20px 0 0;
+    font-size: 21px;
+    font-weight: 600;
+    font-family: 'pretendard';
 }
 
 .contact-info {
-  font-family: 'pretendard';
-  font-size: 15px;
-  font-weight: 200;
+    font-family: 'pretendard';
+    font-size: 15px;
+    font-weight: 200;
 }
 
 
